@@ -1,1 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A reusable HTML, CSS, and JavaScript project starter.">
+    <title>Project Name</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container">
+            <a class="site-logo" href="#home">Project Name</a>
 
+            <nav aria-label="Main navigation">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main content -->
+    <main id="home" class="container">
+        <section class="hero" aria-labelledby="page-title">
+            <h1 id="page-title">Welcome to Project Name</h1>
+            <p>
+                Replace this text with a short introduction to your project.
+            </p>
+        </section>
+
+        <!-- Example interactive component -->
+        <section id="about" class="content-section" aria-labelledby="about-title">
+            <h2 id="about-title">Try the Interaction</h2>
+            <p id="message">Click the button to test the JavaScript connection.</p>
+            <button id="actionButton" type="button">Click me</button>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> Project Name</p>
+        </div>
+    </footer>
+</body>
+</html>
