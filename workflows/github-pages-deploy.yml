@@ -1,1 +1,48 @@
+# This workflow deploys a static website to GitHub Pages.
+# It is intended for projects that publish their built files to GitHub Pages.
 
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+# Grant the workflow only the permissions required for deployment.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Prevent overlapping deployments.
+concurrency:
+  group: github-pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
+      # Default: publish the repository root.
+      # For a build-based project, add the appropriate build steps
+      # and change the artifact path to the build output directory.
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
