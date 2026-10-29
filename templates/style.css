@@ -1,1 +1,178 @@
+/* =========================
+   Design tokens
+   ========================= */
+:root {
+    --color-background: #f5f7fa;
+    --color-surface: #ffffff;
+    --color-text: #202735;
+    --color-muted: #5b6472;
+    --color-primary: #2457a7;
+    --color-primary-hover: #193f7c;
+    --color-border: #d9e0e8;
 
+    --font-family: Arial, Helvetica, sans-serif;
+
+    --space-1: 0.5rem;
+    --space-2: 1rem;
+    --space-3: 1.5rem;
+    --space-4: 2rem;
+
+    --content-width: 70rem;
+    --border-radius: 0.75rem;
+}
+
+/* =========================
+   Base styles
+   ========================= */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--color-text);
+    background-color: var(--color-background);
+}
+
+a {
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary-hover);
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 3px solid var(--color-primary);
+    outline-offset: 3px;
+}
+
+button {
+    font: inherit;
+    cursor: pointer;
+}
+
+.container {
+    width: min(100% - 2rem, var(--content-width));
+    margin-inline: auto;
+}
+
+/* =========================
+   Header and navigation
+   ========================= */
+.site-header {
+    background-color: var(--color-surface);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-2);
+    padding-block: var(--space-2);
+}
+
+.site-logo {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-list a {
+    text-decoration: none;
+}
+
+/* =========================
+   Main content
+   ========================= */
+main {
+    min-height: 70vh;
+    padding-block: var(--space-4);
+}
+
+.hero,
+.content-section {
+    padding: var(--space-3);
+    background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--border-radius);
+}
+
+.hero {
+    margin-bottom: var(--space-3);
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.content-section p {
+    color: var(--color-muted);
+}
+
+#actionButton {
+    padding: 0.7rem 1.1rem;
+    color: #ffffff;
+    background-color: var(--color-primary);
+    border: 0;
+    border-radius: 0.4rem;
+}
+
+#actionButton:hover {
+    background-color: var(--color-primary-hover);
+}
+
+/* =========================
+   Footer
+   ========================= */
+.site-footer {
+    padding-block: var(--space-2);
+    color: var(--color-muted);
+    text-align: center;
+    border-top: 1px solid var(--color-border);
+}
+
+/* =========================
+   Responsive layout
+   ========================= */
+@media (max-width: 480px) {
+    .site-header .container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .hero,
+    .content-section {
+        padding: var(--space-2);
+    }
+}
+
+/* =========================
+   Reduced motion preference
+   ========================= */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
