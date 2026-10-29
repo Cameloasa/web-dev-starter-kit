@@ -1,0 +1,216 @@
+
+# ========================================
+# 1. ENVIRONMENT VARIABLES AND SECRETS
+# ========================================
+
+.env
+.env.*
+!.env.example
+
+# Private keys and certificates
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+
+
+# ========================================
+# 2. OPERATING SYSTEM FILES
+# ========================================
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.directory
+
+
+# ========================================
+# 3. EDITORS AND IDEs
+# ========================================
+
+# Visual Studio Code
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# JetBrains IDEs
+.idea/
+*.iml
+
+# General editor files
+*.swp
+*.swo
+*.orig
+
+
+# ========================================
+# 4. NODE.JS, NPM AND FRONTEND
+# ========================================
+
+node_modules/
+.npm/
+.npx/
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+
+# Build outputs
+dist/
+build/
+out/
+
+# Framework caches
+.vite/
+.next/
+.nuxt/
+.svelte-kit/
+.angular/
+.turbo/
+.parcel-cache/
+
+# Coverage and test reports
+coverage/
+.nyc_output/
+playwright-report/
+test-results/
+
+
+# ========================================
+# 5. PYTHON
+# ========================================
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Python packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and type-checking caches
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.tox/
+.hypothesis/
+
+# Jupyter
+.ipynb_checkpoints/
+
+
+# ========================================
+# 6. JAVA AND BUILD TOOLS
+# ========================================
+
+# Compiled Java files
+*.class
+
+# Maven
+target/
+
+# Gradle
+.gradle/
+build/
+
+# Packaged Java applications
+*.jar
+*.war
+*.ear
+
+# Local Java environment files
+hs_err_pid*.log
+
+
+# ========================================
+# 7. LOGS AND TEMPORARY FILES
+# ========================================
+
+*.log
+logs/
+tmp/
+temp/
+*.tmp
+*.bak
+*.cache
+
+
+# ========================================
+# 8. DATABASES AND LOCAL DATA
+# ========================================
+
+# Local database files
+*.sqlite
+*.sqlite3
+*.db
+
+# Local data exports
+*.dump
+*.sql.gz
+
+
+# ========================================
+# 9. TESTING AND AUTOMATION
+# ========================================
+
+# Selenium downloads and browser artifacts
+/downloads/
+
+# Generic test artifacts
+artifacts/
+reports/
+
+
+# ========================================
+# 10. DOCKER AND LOCAL OVERRIDES
+# ========================================
+
+# Local Docker Compose overrides
+docker-compose.override.yml
+compose.override.yaml
+compose.override.yml
+
+# Local configuration overrides
+*.local
+
+
+# ========================================
+# 11. GENERATED DOCUMENTATION
+# ========================================
+
+# Uncomment if generated documentation
+# should not be committed:
+# site/
+# docs/_build/
+
+
+# ========================================
+# 12. OPTIONAL LOCAL FILES
+# ========================================
+
+# Uncomment if these files should remain local:
+# .env.local
+# secrets/
+# private/
+# uploads/
+
