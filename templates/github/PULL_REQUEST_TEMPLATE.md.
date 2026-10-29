@@ -1,0 +1,63 @@
+## Summary
+
+<!-- Briefly explain what this pull request changes and why. -->
+
+- 
+- 
+
+## Type of Change
+
+<!-- Select the option that best describes this pull request. -->
+
+- [ ] Feature
+- [ ] Bug fix
+- [ ] Refactoring
+- [ ] Documentation
+- [ ] Tests
+- [ ] Configuration or tooling
+- [ ] Other: 
+
+## Changes Made
+
+<!-- Describe the main changes in more detail. -->
+
+- 
+- 
+
+## Testing
+
+<!-- Explain how the changes were tested. -->
+
+- [ ] Automated tests pass.
+- [ ] Manual testing completed.
+- [ ] No tests were needed for this change.
+
+**Testing details:**
+
+<!-- Add commands, scenarios, or results where relevant. -->
+
+## Screenshots or Demonstration
+
+<!-- For UI changes, add screenshots or a short demonstration when useful. -->
+
+Not applicable / Attached below.
+
+## Checklist
+
+- [ ] The code follows the project's conventions.
+- [ ] I reviewed my own changes.
+- [ ] No unrelated files or changes are included.
+- [ ] No secrets or sensitive information have been committed.
+- [ ] Documentation has been updated where necessary.
+- [ ] Tests have been added or updated where appropriate.
+- [ ] Accessibility and responsive behavior have been considered for UI changes.
+
+## Related Issues
+
+<!-- Link related issues, if applicable. -->
+
+Closes #
+
+## Additional Notes
+
+<!-- Mention limitations, risks, follow-up work, or anything reviewers should know. -->
